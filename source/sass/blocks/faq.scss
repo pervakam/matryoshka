@@ -14,7 +14,7 @@
     content: "";
     width: 1700px;
     height: 1314px;
-    background-image: url("../../img/questions.svg");
+    background-image: url("../build/img/questions.svg");
   }
 
   &__wrapper {
@@ -68,7 +68,7 @@
       content: '';
       width: 24px;
       height: 24px;
-      background-image: url("../../img/icons/arrow.svg");
+      background-image: url("../build/img/icons/arrow.svg");
       transform: rotate(180deg);
       transition: 0.5s;
       margin-left: 24px;
