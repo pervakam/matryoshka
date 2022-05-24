@@ -1,0 +1,123 @@
+.info {
+  padding-bottom: 46px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    width: 32.5%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item-img {
+    min-height: 156px;
+    height: 156px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &__item-description {
+    padding: 24px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__item-links {
+    margin-top: auto;
+
+    a {
+      text-decoration: none;
+      font-family: $Montserrat600;
+      font-weight: 600;
+      font-size: 0.875rem;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      padding: 10px 16px;
+      color: $blue;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+
+      &:after {
+        display: block;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url("../../img/link-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &__item-description-title {
+    p {
+      font-size: 0.875rem;
+      letter-spacing: -0.04em;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .info {
+    padding-bottom: 46px;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__item-img {
+      display: block;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .info {
+    &__item-img {
+      display: flex;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

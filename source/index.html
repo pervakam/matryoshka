@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Творите, а мы поможем в становлении | Матрёшка</title>
+  <meta name="description" content="Magistra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous" type="font/woff">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous" type="font/woff">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous" type="font/woff">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous" type="font/woff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+<div style="display: none">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__menu">
+      <button class="page-header__menu-button">
+        <svg>
+          <use xlink:href="#burger"></use>
+        </svg>
+      </button>
+      <a href="/" class="page-header__logo">
+        <svg class="page-header__logo-desktop">
+          <use xlink:href="#logo-icon"></use>
+        </svg>
+        <svg class="page-header__logo-mobile">
+          <use xlink:href="#doll"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="page-header__search">
+      <svg class="page-header__search-icon">
+        <use xlink:href="#search-icon"></use>
+      </svg>
+      <input id="search-field" type="search" class="page-header__search-input" placeholder="Поиск">
+      <label class="visually-hidden" for="search-field">Поиск</label>
+      <button class="page-header__mic-button">
+        <svg>
+          <use xlink:href="#mic-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="page-header__more">
+      <button class="page-header__more-button">
+        <svg>
+          <use xlink:href="#vertical"></use>
+        </svg>
+      </button>
+      <button class="page-header__news-button">
+        <svg>
+          <use xlink:href="#news"></use>
+        </svg>
+      </button>
+      <button class="page-header__login-button">
+        <svg>
+          <use xlink:href="#doll"></use>
+        </svg>
+        <img src="img/user.png" alt="фото профиля">
+        <span>войти</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="page-main__wrapper">
+    <section class="about">
+      <div class="about__description">
+        <h1 class="title title--h1">Авторам</h1>
+        <h3 class="title title--h3">Творите, а мы поможем в становлении</h3>
+        <p>Рекомендации и полезная информация помогут понять как все устроено</p>
+      </div>
+      <div class="about__img">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/bannner_mobile@1x.webp 1x, img/bannner_mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/bannner_desktop@1x.webp 1x, img/bannner_desktop@2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="img/bannner_mobile@1x.jpg 1x, img/bannner_mobile@2x.jpg 2x">
+          <img src="img/bannner_desktop@1x.jpg" srcset="img/bannner_desktop@2x.jpg 2x" alt="изображение к описанию">
+        </picture>
+      </div>
+    </section>
+    <section class="links">
+      <ul class="links__list">
+        <li class="links__item">
+          <h2 class="title title--h2">Сообщество</h2>
+          <ul>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#education"></use>
+                </svg>
+                <span>Правила</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#rule"></use>
+                </svg>
+                <span>Программы</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="links__item">
+          <h2 class="title title--h2">Канал</h2>
+          <ul>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#settings"></use>
+                </svg>
+                <span>Инструменты</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#studio"></use>
+                </svg>
+                <span>Инструкции</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="links__item">
+          <h2 class="title title--h2">Контент</h2>
+          <ul>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#star"></use>
+                </svg>
+                <span>Советы</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg>
+                  <use xlink:href="#money"></use>
+                </svg>
+                <span>Монетизация</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+    <section class="faq">
+      <div class="faq__wrapper">
+        <h2 class="title title--h2">Частые вопросы</h2>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <input type="checkbox" id="faq-item-1" name="faq-item" class="visually-hidden" checked>
+            <label for="faq-item-1" class="faq__title"><span>Как создать канал</span></label>
+            <div class="faq__answer">
+              <ul>
+                <li>Войдите на аккаунт</li>
+                <li>Перейдите на вкладку Каналы через иконку пользователя и создайте канал</li>
+                <li>Далее загрузите ваше первое видео - в меню выберите Творческую студию и нажмите “Загрузить видео”
+                </li>
+                <li>Заполните все необходимые поля и по окончании нажмитt кнопку “Сохранить”</li>
+              </ul>
+              <p>Поздравляем вы создали новый канал и опубликовали ваше первое видео!</p>
+              <a href="#">полный список вопросов</a>
+            </div>
+          </li>
+          <li class="faq__item">
+            <input type="checkbox" id="faq-item-2" name="faq-item" class="visually-hidden">
+            <label for="faq-item-2" class="faq__title"><span>Как привлечь аудиторию</span></label>
+            <div class="faq__answer">
+              <p>привлечь аудиторию</p>
+              <a href="#">полный список вопросов</a>
+            </div>
+          </li>
+          <li class="faq__item">
+            <input type="checkbox" id="faq-item-3" name="faq-item" class="visually-hidden">
+            <label for="faq-item-3" class="faq__title"><span>Как работает монетизация</span></label>
+            <div class="faq__answer">
+              <p>работает монетизация</p>
+              <a href="#">полный список вопросов</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="info">
+      <ul class="info__list">
+        <li class="info__item">
+          <div class="info__item-img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/card-1_mobile@1x.webp 1x, img/card-1_mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/card-1_tablet@1x.webp 1x, img/card-1_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/card-1_desktop@1x.webp 1x, img/card-1_desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/card-1_mobile@1x.jpg 1x, img/card-1_mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/card-1_tablet@1x.jpg 1x, img/card-1_tablet@2x.jpg 2x">
+              <img src="img/card-1_desktop@1x.jpg" srcset="img/card-1_desktop@2x.jpg 2x" alt="изображение к описанию">
+            </picture>
+          </div>
+          <div class="info__item-description">
+            <div class="info__item-description-title">
+              <h3 class="title title--h3">Полезные материалы</h3>
+              <p>Популярные авторы делятся историями своего успеха</p>
+            </div>
+            <div class="info__item-links">
+              <a href="#">подробнее</a>
+            </div>
+
+          </div>
+        </li>
+        <li class="info__item">
+          <div class="info__item-img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/card-2_mobile@1x.webp 1x, img/card-2_mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/card-2_tablet@1x.webp 1x, img/card-2_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/card-2_desktop@1x.webp 1x, img/card-2_desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/card-2_mobile@1x.jpg 1x, img/card-2_mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/card-2_tablet@1x.jpg 1x, img/card-2_tablet@2x.jpg 2x">
+              <img src="img/card-2_desktop@1x.jpg" srcset="img/card-2_desktop@2x.jpg 2x" alt="изображение к описанию">
+            </picture>
+          </div>
+          <div class="info__item-description">
+            <div class="info__item-description-title">
+              <h3 class="title title--h3">Помощь</h3>
+              <p>Изучите актуальные темы на форуме сообщества или посетите Справочный центр</p>
+            </div>
+            <div class="info__item-links">
+              <a href="#">справочный центр</a>
+              <a href="#">форум сообщества</a>
+            </div>
+
+          </div>
+        </li>
+        <li class="info__item">
+          <div class="info__item-img">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/card-3_mobile@1x.webp 1x, img/card-3_mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/card-3_tablet@1x.webp 1x, img/card-3_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/card-3_desktop@1x.webp 1x, img/card-3_desktop@2x.webp 2x">
+
+              <source media="(max-width: 767px)" srcset="img/card-3_mobile@1x.jpg 1x, img/card-3_mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/card-3_tablet@1x.jpg 1x, img/card-3_tablet@2x.jpg 2x">
+              <img src="img/card-3_desktop@1x.jpg" srcset="img/card-3_desktop@2x.jpg 2x" alt="изображение к описанию">
+            </picture>
+          </div>
+          <div class="info__item-description">
+            <div class="info__item-description-title">
+              <h3 class="title title--h3">Обратная связь</h3>
+              <p>Следите за новостями в социальных сетях и задавайте интересующие вас вопросы</p>
+            </div>
+            <div class="info__item-links">
+              <a href="#">вконтакте</a>
+              <a href="#">телеграм</a>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+    </section>
+  </div>
+</main>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>

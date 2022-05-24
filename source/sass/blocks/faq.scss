@@ -1,0 +1,140 @@
+.faq {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 48px;
+  position: relative;
+  margin-bottom: 16px;
+
+  &:after {
+    position: absolute;
+    z-index: -1;
+    bottom: -40px;
+    right: -20px;
+    display: block;
+    content: "";
+    width: 1700px;
+    height: 1314px;
+    background-image: url("../../img/questions.svg");
+  }
+
+  &__wrapper {
+    max-width: 755px;
+    position: relative;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 16px 0;
+    padding: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    & input:checked + .faq__title {
+      &:after {
+        transform: rotate(0deg);
+        transition: 0.5s;
+      }
+    }
+
+    & input:checked ~ .faq__answer {
+      display: block;
+    }
+
+    & input:focus + .faq__title {
+      span {
+        color: $blue;
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+
+    span {
+      font-weight: 600;
+      font-family: $Montserrat600;
+      letter-spacing: -0.04em;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url("../../img/icons/arrow.svg");
+      transform: rotate(180deg);
+      transition: 0.5s;
+      margin-left: 24px;
+    }
+  }
+
+  &__answer {
+    display: none;
+
+    ul {
+      list-style: disc;
+      margin: 0 0 24px;
+      padding: 0 0 0 16px;
+      font-family: $Montserrat500;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 143%;
+      letter-spacing: -0.04em;
+      color: $grey;
+    }
+
+    p {
+      margin: 0;
+      font-family: $Montserrat500;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 143%;
+      letter-spacing: -0.04em;
+    }
+
+    a {
+      font-family: $Montserrat600;
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 143%;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: $blue;
+      text-decoration: none;
+      padding: 24px 16px;
+    }
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .faq {
+    padding: 32px 0;
+
+    &:after {
+      bottom: 0;
+      width: 1024px;
+      height: 788px;
+      background-size: cover;
+    }
+
+    &__list {
+      width: 80%;
+    }
+  }
+
+}
+
+@media (max-width: $mobile-max-width) {
+  .faq {
+    padding: 24px 0;
+  }
+
+}

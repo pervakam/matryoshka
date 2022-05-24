@@ -1,0 +1,47 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: $desktop-min-width;
+  background-color: $background-grey;
+  margin: 0 auto;
+  text-align: left;
+  font-family: $Montserrat;
+  font-size: 1rem;
+  line-height: 150%;
+  color: $black;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+@media (max-width: $tablet-max-width) {
+  body {
+    min-width: $tablet-min-width;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  body {
+    min-width: $mobile-min-width;
+    font-size: 0.875rem;
+    line-height: 143%;
+  }
+}
